@@ -9,7 +9,9 @@ var love = love || {};
         this.love = 'the most powerful force in the universe.';
     }
 
-    App.prototype.run = function() {
+    App.prototype.run = function() {     
+        const flower = new love.FlowerOfLife();
+        flower.render();   
         console.log('.love> is ' + this.love);
 
         return true;

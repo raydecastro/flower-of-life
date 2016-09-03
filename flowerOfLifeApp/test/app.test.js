@@ -3,7 +3,7 @@
 var assert = require('chai').assert;
 var App = require('../app/scripts/app.js');
 
-describe('App', function () {
+xdescribe('App', function () {
     it('should exist', function () {
         var app = new App(); 
 
