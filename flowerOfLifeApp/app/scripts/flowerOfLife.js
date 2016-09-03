@@ -110,6 +110,38 @@ var love = love || {};
         this.drawCircle(originX + radius * eightySixPercent * 4, originY + radius * 2, radius);
     };
 
+    FlowerOfLife.prototype.renderFruitOfLife = function () {
+        const originX = 540;
+        const originY = 540;
+        const radius = 108;
+        const eightySixPercent = 93/radius; 
+
+        this.context.strokeStyle = 'yellow';
+
+        this.drawCircle(originX, originY - radius * 0, radius);
+   
+        this.drawCircle(originX, originY + radius * 2, radius);
+
+        this.drawCircle(originX, originY - radius * 2, radius);
+
+        this.drawCircle(originX, originY + radius * 4, radius);
+
+        this.drawCircle(originX, originY - radius * 4, radius);
+
+        this.drawCircle(originX - radius * eightySixPercent * 2, originY - radius * 1, radius);
+        this.drawCircle(originX + radius * eightySixPercent * 2, originY - radius * 1, radius);
+        
+        this.drawCircle(originX - radius * eightySixPercent * 2, originY + radius * 1, radius);
+        this.drawCircle(originX + radius * eightySixPercent * 2, originY + radius * 1, radius);
+
+
+        this.drawCircle(originX - radius * eightySixPercent * 4, originY - radius * 2, radius);
+        this.drawCircle(originX + radius * eightySixPercent * 4, originY - radius * 2, radius);
+
+        this.drawCircle(originX - radius * eightySixPercent * 4, originY + radius * 2, radius);
+        this.drawCircle(originX + radius * eightySixPercent * 4, originY + radius * 2, radius);
+    };
+
     FlowerOfLife.prototype.drawCircle = function (x, y, r) {
         this.context.beginPath();
         this.context.arc(x, y, r, 0, 2 * Math.PI);
