@@ -53,11 +53,7 @@ var love = love || {};
         this.drawCircle(originX - radius * eightySixPercent, originY - radius * 3.5, radius);
         this.drawCircle(originX + radius * eightySixPercent, originY - radius * 3.5, radius);
 
-        this.drawCircle(originX - radius * eightySixPercent, originY + radius * 4.5, radius);
-        this.drawCircle(originX + radius * eightySixPercent, originY + radius * 4.5, radius);
-
         this.drawCircle(originX, originY - radius * 4, radius);
-        this.drawCircle(originX, originY + radius * 5, radius);
 
         this.drawCircle(originX - radius * eightySixPercent * 2, originY - radius * 3, radius);
         this.drawCircle(originX + radius * eightySixPercent * 2, originY - radius * 3, radius);
@@ -80,9 +76,6 @@ var love = love || {};
         this.drawCircle(originX - radius * eightySixPercent * 2, originY + radius * 3, radius);
         this.drawCircle(originX + radius * eightySixPercent * 2, originY + radius * 3, radius);
 
-        this.drawCircle(originX - radius * eightySixPercent * 2, originY + radius * 4, radius);
-        this.drawCircle(originX + radius * eightySixPercent * 2, originY + radius * 4, radius);
-
         this.drawCircle(originX - radius * eightySixPercent * 3, originY - radius * 2.5, radius);
         this.drawCircle(originX + radius * eightySixPercent * 3, originY - radius * 2.5, radius);
 
@@ -101,9 +94,6 @@ var love = love || {};
         this.drawCircle(originX - radius * eightySixPercent * 3, originY + radius * 2.5, radius);
         this.drawCircle(originX + radius * eightySixPercent * 3, originY + radius * 2.5, radius);
 
-        this.drawCircle(originX - radius * eightySixPercent * 3, originY + radius * 3.5, radius);
-        this.drawCircle(originX + radius * eightySixPercent * 3, originY + radius * 3.5, radius);
-
         this.drawCircle(originX - radius * eightySixPercent * 4, originY - radius * 2, radius);
         this.drawCircle(originX + radius * eightySixPercent * 4, originY - radius * 2, radius);
 
@@ -118,9 +108,6 @@ var love = love || {};
 
         this.drawCircle(originX - radius * eightySixPercent * 4, originY + radius * 2, radius);
         this.drawCircle(originX + radius * eightySixPercent * 4, originY + radius * 2, radius);
-
-        this.drawCircle(originX - radius * eightySixPercent * 4, originY + radius * 3, radius);
-        this.drawCircle(originX + radius * eightySixPercent * 4, originY + radius * 3, radius);
     };
 
     FlowerOfLife.prototype.drawCircle = function (x, y, r) {
