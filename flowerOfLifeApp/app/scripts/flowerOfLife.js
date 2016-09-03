@@ -111,10 +111,7 @@ var love = love || {};
     };
 
     FlowerOfLife.prototype.drawCircle = function (x, y, r) {
-        this.drawCrossHairs(x, y);
-
         this.context.beginPath();
-        this.context.setLineDash([9, 9]);
         this.context.arc(x, y, r, 0, 2 * Math.PI);
         this.context.stroke();
     };
