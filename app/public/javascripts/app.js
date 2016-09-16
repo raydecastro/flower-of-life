@@ -20,3 +20,6 @@ var love = love || {};
     module.exports = App;
 
 })(love);
+
+const app = new love.App();
+app.run();
