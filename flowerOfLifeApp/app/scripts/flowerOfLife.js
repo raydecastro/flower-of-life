@@ -12,10 +12,10 @@ var love = love || {};
     }
 
     FlowerOfLife.prototype.render = function() {
-        const originX = 540;
-        const originY = 540;
-        const radius = 108;
-        const eightySixPercent = 93/radius; 
+        const originX = 279;
+        const originY = 279;
+        const radius = 54;
+        const eightySixPercent = 93/108; 
 
         this.drawCircle(originX, originY - radius * 0, radius);
         this.drawCircle(originX, originY + radius * 1, radius);
@@ -111,10 +111,10 @@ var love = love || {};
     };
 
     FlowerOfLife.prototype.renderFruitOfLife = function () {
-        const originX = 540;
-        const originY = 540;
-        const radius = 108;
-        const eightySixPercent = 93/radius; 
+        const originX = 279;
+        const originY = 279;
+        const radius = 54;
+        const eightySixPercent = 93/108; 
 
         this.context.strokeStyle = 'yellow';
 
@@ -143,9 +143,19 @@ var love = love || {};
     };
 
     FlowerOfLife.prototype.drawCircle = function (x, y, r) {
+        var circle = {
+            x: x,
+            y: y,
+            r: r
+        };
+
         this.context.beginPath();
         this.context.arc(x, y, r, 0, 2 * Math.PI);
         this.context.stroke();
+
+        console.log('circle: ' + JSON.stringify(circle));
+
+        return circle;
     };
 
     FlowerOfLife.prototype.drawCrossHairs = function (x, y) {
