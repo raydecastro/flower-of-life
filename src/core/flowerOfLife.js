@@ -1,10 +1,10 @@
 "use strict";
 
-import Canvas from "./canvas";
+import CanvasInterface from "./canvasInterface";
 
 class FlowerOfLife {
     constructor() {
-        this.canvas = new Canvas();
+        this.canvas = new CanvasInterface();
     }
 
     render() {

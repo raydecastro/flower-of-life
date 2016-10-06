@@ -7,8 +7,13 @@ class App {
         this.love = "the most powerful force in the universe.";
     }
 
-    run() {
+    run(canvas) {
         const flower = new FlowerOfLife();
+
+        if (canvas !== undefined) {
+            flower.canvas = canvas;
+        }
+        
         flower.render();   
 
         console.log(".love> is " + this.love);

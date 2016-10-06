@@ -1,6 +1,6 @@
 "use strict";
 
-class Canvas {
+class CanvasInterface {
     drawCircle(x, y, r) {
         const circle = {
             x: x,
@@ -14,4 +14,4 @@ class Canvas {
     }
 }
 
-export default Canvas;
+export default CanvasInterface;
