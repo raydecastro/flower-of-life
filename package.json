@@ -6,8 +6,8 @@
   "scripts": {
     "test": "gulp test",
     "test-auto": "gulp test-auto",
-    "start": "node ./bin/www"
-  },
+    "start": "node ./src/web/express/bin/www"
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raydecastro/flower-of-life.git"
