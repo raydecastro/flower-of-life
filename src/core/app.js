@@ -1,4 +1,4 @@
-"use strict";
+import FlowerOfLife from './flowerOfLife';
 
 class App {
     constructor() {
@@ -6,6 +6,9 @@ class App {
     }
 
     run() {
+        const flower = new FlowerOfLife();
+        flower.render();   
+
         console.log(".love> is " + this.love);
         return true; 
     }
