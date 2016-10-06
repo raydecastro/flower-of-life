@@ -10,7 +10,7 @@ describe("App", () => {
         expect(app).to.be.defined;
     });
 
-    xit("shall have a run method", () => {
+    it("shall have a run method", () => {
         let app = new App();
 
         expect(app.run()).to.be.true;
