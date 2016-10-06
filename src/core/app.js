@@ -1,3 +1,5 @@
+"use strict";
+
 import FlowerOfLife from './flowerOfLife';
 
 class App {

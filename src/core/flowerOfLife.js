@@ -1,17 +1,13 @@
-'use strict';
+"use strict";
 
-var love = love || {};
-
-(function(namespace) {
-    namespace.FlowerOfLife = FlowerOfLife;
-
-    function FlowerOfLife() {
+class FlowerOfLife {
+    constructor() {
         this.canvas = document.getElementById("flower-of-life");
         this.context = this.canvas.getContext("2d");
         this.context.strokeStyle = 'blue';
     }
 
-    FlowerOfLife.prototype.render = function() {
+    render() {
         const originX = 279;
         const originY = 279;
         const radius = 54;
@@ -108,9 +104,9 @@ var love = love || {};
 
         this.drawCircle(originX - radius * eightySixPercent * 4, originY + radius * 2, radius);
         this.drawCircle(originX + radius * eightySixPercent * 4, originY + radius * 2, radius);
-    };
+    }
 
-    FlowerOfLife.prototype.renderFruitOfLife = function () {
+    renderFruitOfLife() {
         const originX = 279;
         const originY = 279;
         const radius = 54;
@@ -140,10 +136,10 @@ var love = love || {};
 
         this.drawCircle(originX - radius * eightySixPercent * 4, originY + radius * 2, radius);
         this.drawCircle(originX + radius * eightySixPercent * 4, originY + radius * 2, radius);
-    };
+    }
 
-    FlowerOfLife.prototype.drawCircle = function (x, y, r) {
-        var circle = {
+    drawCircle(x, y, r) {
+        const circle = {
             x: x,
             y: y,
             r: r
@@ -156,9 +152,9 @@ var love = love || {};
         console.log('circle: ' + JSON.stringify(circle));
 
         return circle;
-    };
+    }
 
-    FlowerOfLife.prototype.drawCrossHairs = function (x, y) {
+    drawCrossHairs(x, y) {
         this.context.beginPath();
         this.context.moveTo(x, y);
         this.context.lineTo(x+9, y);
@@ -168,8 +164,7 @@ var love = love || {};
         this.context.lineTo(x, y-18);
         this.context.moveTo(x, y);
         this.context.stroke();
-    }; 
-  
-    module.exports = FlowerOfLife;
+    }
+}
 
-})(love);
+export default FlowerOfLife;
